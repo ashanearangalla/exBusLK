@@ -220,12 +220,12 @@ if (isset($_POST["addInquiryButton"])) {
     $mail->isSMTP();                                      
     $mail->Host = 'smtp.gmail.com';  
     $mail->SMTPAuth = true;                               
-    $mail->Username = 'sharneeshan1001@gmail.com';               
-    $mail->Password = 'hhjzffsksjqjgfvr';                           
+    $mail->Username = '';               
+    $mail->Password = '';                           
     $mail->SMTPSecure = 'ssl';                            
     $mail->Port = 465;                                    
 
-    $mail->setFrom('sharneeshan1001@gmail.com', 'ezBusLK');
+    $mail->setFrom('', 'ezBusLK');
     $mail->addAddress($email, $name); 
 
     $mail->isHTML(true);                                
